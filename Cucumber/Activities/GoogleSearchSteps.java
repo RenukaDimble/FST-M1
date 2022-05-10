@@ -1,4 +1,4 @@
-package stepDefination;
+package Cucumber.stepDefination;
 
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
@@ -19,7 +19,7 @@ public class GoogleSearchSteps {
     public void userIsOnGooglePage() throws Throwable {
         //Create a new instance of the Firefox driver
         driver = new FirefoxDriver();
-        wait = new WebDriverWait(driver, 15);
+       // wait = new WebDriverWait(driver,10);
 
         //Open the browser
         driver.get("https://www.google.com");
